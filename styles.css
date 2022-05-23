@@ -1,0 +1,142 @@
+* {
+  --Dark-cyan: hsl(185, 75%, 39%);
+  --Very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --Dark-grayish-blue: hsl(227, 10%, 46%);
+  --Dark-gray: hsl(0, 0%, 59%);
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+main {
+  background-image: url(./images/bg-pattern-bottom.svg),
+    url(./images/bg-pattern-top.svg);
+  background-position: left 76rem top 38rem, right 78rem bottom 30rem;
+  background-repeat: no-repeat, no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Dark-cyan);
+}
+
+#container {
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 35rem;
+  height: 37rem;
+  border-radius: 1rem;
+}
+
+#hero-container {
+  height: 60%;
+}
+
+#hero-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem 1rem 0 0;
+}
+
+#content-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+}
+
+#first-row {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8rem;
+}
+
+#first-row h1 {
+  font-size: 1.8rem;
+}
+
+#first-row #age {
+  color: var(--Dark-grayish-blue);
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+
+#second-row {
+  font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+}
+
+#container-stats {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-top: solid var(--Dark-gray) 0.5px;
+  width: 100%;
+}
+
+#stats {
+  border-spacing: 5.5rem 0;
+  margin-top: 3rem;
+  font-size: 1.2rem;
+  margin-bottom: 4.5rem;
+}
+
+th {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+td {
+  font-size: 1.2rem;
+}
+
+#profile-container {
+  position: absolute;
+  top: 34%;
+}
+
+.victor {
+  border-radius: 5rem;
+  border: solid white 0.5rem;
+}
